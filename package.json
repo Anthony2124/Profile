@@ -1,0 +1,22 @@
+{
+  "name": "developer-profile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A thoughtful, interactive developer portfolio.",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "build": "node build.mjs",
+    "check": "node --check app.js && node --check profile.js && node --check server.mjs && node --check build.mjs",
+    "test": "node --test tests/server.test.mjs",
+    "test:browser": "playwright test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0"
+  }
+}

@@ -1,0 +1,14 @@
+node_modules/
+test-results/
+playwright-report/
+.DS_Store
+Thumbs.db
+*.log
+dist/
+.npm-cache/
+.browsers/
+.artifacts/
+
+# Original uploads are included in the website under assets/.
+/81d9189c-82bb-4ad3-a2f5-71b9956b57e7.jpg
+/Anthony_Cordial_Resume.pdf

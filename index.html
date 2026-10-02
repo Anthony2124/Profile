@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#141714">
+  <meta name="description" content="Anthony Cordial — software engineer in Metro Manila. Explore my work in payment platforms, Android, and the web.">
+  <meta property="og:title" content="Anthony Cordial — Software Engineer">
+  <meta property="og:description" content="Thoughtful experiences for Android and the web. Explore my projects, toolkit, and the person behind the code.">
+  <meta property="og:type" content="website">
+  <title>Anthony Cordial — Software Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dm-serif-display-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem('portfolio-theme') || 'dark'; } catch { document.documentElement.dataset.theme = 'dark'; }</script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="wordmark" aria-label="Portfolio home"><span class="brand-icon" aria-hidden="true">&lt;·&gt;</span> portfolio<span class="brand-dot">.</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#work" data-nav="work">Work</a><a href="#about" data-nav="about">About</a><a href="#skills" data-nav="skills">Skills</a><a href="#experience" data-nav="experience">Experience</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" id="theme-toggle" aria-label="Switch to light theme" title="Switch theme"></button>
+        <a class="header-contact" href="#contact">Let’s talk <span data-icon="arrow-up-right"></span></a>
+        <button class="icon-button menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span data-icon="menu"></span></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden><a href="#work">Work</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="availability"><span class="status-dot"></span><span data-profile="availability">Open to opportunities</span></div>
+        <p class="hero-intro" id="hero-intro">ANTHONY CORDIAL / SOFTWARE ENGINEER</p>
+        <h1 id="hero-title">Good ideas.<br>Great <span class="serif-word">execution<span class="word-period">.</span></span></h1>
+        <p class="hero-description" data-profile="introduction">I’m Anthony Cordial. I build reliable platforms and thoughtful experiences — from payments at scale to Android and the web.</p>
+        <div class="hero-ctas"><a class="button button-primary" href="#work">Explore my work <span data-icon="arrow-down-right"></span></a><a class="button button-text" href="#contact">Get in touch <span data-icon="arrow-up-right"></span></a></div>
+        <div class="hero-footnote"><span class="small-orbit" aria-hidden="true">✳</span><span>Thoughtful code. Real possibilities.</span></div>
+      </div>
+      <div class="hero-visual" id="hero-visual">
+        <div class="portrait-frame">
+          <img class="profile-photo" id="profile-photo" alt="Anthony Cordial" hidden>
+          <div class="portrait-placeholder" id="portrait-placeholder" aria-label="Abstract portrait artwork, ready for your profile photo" role="img">
+            <div class="portrait-grid"></div><div class="portrait-orbit orbit-one"></div><div class="portrait-orbit orbit-two"></div>
+            <div class="abstract-figure"><div class="figure-head"></div><div class="figure-body"></div></div>
+            <div class="portrait-star star-one">✳</div><div class="portrait-star star-two">+</div>
+            <div class="portrait-label"><span>THE HUMAN<br>BEHIND THE CODE.</span><span class="portrait-label-arrow" data-icon="arrow-up-right"></span></div>
+          </div>
+          <div class="portrait-caption"><span class="caption-dot"></span><span data-profile="role">Software Engineer</span><span class="caption-code">&lt;/&gt;</span></div>
+        </div>
+        <div class="code-float"><span class="code-float-icon" data-icon="terminal"></span><div><span class="code-comment">// always in progress</span><br><span class="code-keyword">const</span> mindset = <span class="code-string">"keep building"</span>;</div><span class="code-cursor"></span></div>
+        <div class="visual-meta"><span>BUILT WITH CURIOSITY</span><span>↓ SCROLL TO EXPLORE</span></div>
+      </div>
+    </section>
+
+    <div class="craft-strip"><div class="container craft-inner"><span class="strip-label">A LITTLE OF WHAT I DO</span><span><i data-icon="code"></i> Develop</span><span class="strip-separator">/</span><span><i data-icon="pen"></i> Design</span><span class="strip-separator">/</span><span><i data-icon="bulb"></i> Solve</span><span class="strip-separator">/</span><span><i data-icon="sparkles"></i> Keep learning</span><span class="strip-star" aria-hidden="true">✳</span></div></div>
+
+    <div class="container impact-strip reveal" id="impact-strip" aria-label="Career highlights"></div>
+
+    <section class="section container" id="work" aria-labelledby="work-title">
+      <div class="section-top reveal"><div><p class="eyebrow"><span>01 /</span> SELECTED WORK</p><h2 id="work-title">Ideas, brought <span class="serif-word">to life.</span></h2></div><p class="section-summary">A few things built with purpose.<br>A lot of care in the details.</p></div>
+      <div class="work-toolbar reveal"><div class="project-filters" role="group" aria-label="Filter projects"><button class="filter-button active" data-filter="all" aria-pressed="true">All work <span id="all-project-count">03</span></button><button class="filter-button" data-filter="mobile" aria-pressed="false">Android</button><button class="filter-button" data-filter="fullstack" aria-pressed="false">Full stack</button><button class="filter-button" data-filter="frontend" aria-pressed="false">Frontend</button></div><span class="toolbar-note"><span data-icon="mouse"></span> Click a project to explore</span></div>
+      <div class="projects-grid" id="projects-grid"></div>
+      <p class="project-status sr-only" id="project-status" role="status" aria-live="polite"></p>
+      <p class="sample-note" id="sample-note"><span data-icon="info"></span> Project concepts shown as examples. Real project details coming soon.</p>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-heading reveal"><p class="eyebrow"><span>02 /</span> THE PERSON BEHIND IT</p><h2 id="about-title">More than<br>a <span class="serif-word">commit.</span></h2><div class="about-asterisk" aria-hidden="true">✳</div></div>
+        <div class="about-content reveal"><p class="about-lead" data-profile="about">I'm a software engineer based in Metro Manila, with 4+ years building payment and merchant platforms. I connect thoughtful interfaces with reliable systems — and care about what happens on both sides of the screen.</p><p class="about-secondary" data-profile="approach">At PayMongo, my work spans checkout performance, webhook reliability, and tools for merchants. Outside of that, I build projects like KasiGuru and Steady: technology that connects people with their culture and helps them care for themselves.</p><div class="about-facts"><div><span data-icon="map-pin"></span><span data-profile="location">Metro Manila, Philippines</span></div><div><span data-icon="sparkles"></span><span data-profile="currently">Building KasiGuru — connecting language, culture, and technology.</span></div></div><a class="text-link" id="resume-link" href="assets/Anthony_Cordial_Resume.pdf" target="_blank" rel="noopener noreferrer">View my résumé <span data-icon="download"></span></a></div>
+      </div>
+    </section>
+
+    <section class="section container skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="section-top reveal"><div><p class="eyebrow"><span>03 /</span> THE TOOLKIT</p><h2 id="skills-title">The tools behind<br>the <span class="serif-word">thinking.</span></h2></div><p class="section-summary">Tools change. The drive to<br>build something better stays.</p></div>
+      <div class="toolkit-grid reveal"><div class="skill-tabs" id="skill-tabs" role="tablist" aria-label="Skill categories" aria-orientation="vertical"></div><div class="skill-panel" id="skill-panel" role="tabpanel" tabindex="0"></div></div>
+      <div class="terminal-card reveal"><div class="terminal-top"><div class="terminal-dots"><span></span><span></span><span></span></div><span>meet-the-developer.sh</span><button class="terminal-reset" id="terminal-reset" title="Clear terminal" aria-label="Clear terminal"><span data-icon="rotate"></span></button></div><div class="terminal-content" id="terminal-output" role="log" aria-live="polite" aria-label="Portfolio terminal output"><p><span class="terminal-accent">Welcome, curious human.</span> Take a look around.</p><p class="terminal-muted">Try <button class="inline-command" data-command="help">help</button>, <button class="inline-command" data-command="about">about</button>, <button class="inline-command" data-command="projects">projects</button>, or <button class="inline-command" data-command="contact">contact</button>.</p></div><form class="terminal-form" id="terminal-form"><label for="terminal-input" class="terminal-prompt">visitor<span>@</span>portfolio <span>~ $</span></label><input id="terminal-input" type="text" placeholder="Type a command…" autocomplete="off" spellcheck="false" aria-label="Terminal command"><button class="terminal-run" type="submit" aria-label="Run command"><span data-icon="corner-down-left"></span></button></form></div>
+    </section>
+
+    <section class="experience-section" id="experience" aria-labelledby="experience-title"><div class="container"><div class="section-top reveal"><div><p class="eyebrow"><span>04 /</span> EXPERIENCE THAT COUNTS</p><h2 id="experience-title">Built in the <span class="serif-word">real world.</span></h2></div><a class="text-link" href="assets/Anthony_Cordial_Resume.pdf" id="experience-resume" target="_blank" rel="noopener noreferrer">The full résumé <span data-icon="arrow-up-right"></span></a></div><div class="experience-layout"><div id="experience-timeline" class="experience-timeline reveal"></div><aside class="education-list reveal" id="education-list" aria-label="Education and certifications"></aside></div></div></section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-inner reveal"><div class="availability"><span class="status-dot"></span><span>THE NEXT CHAPTER STARTS WITH A CONVERSATION</span></div><h2 id="contact-title">Great things start<br>with a <span class="serif-word">hello.</span><span class="contact-asterisk" aria-hidden="true">✳</span></h2><p>Building something interesting? Looking for your next teammate?<br>I’d love to hear what you have in mind.</p><div class="contact-actions"><a id="email-link" class="button button-primary button-large" href="mailto:anthonycordial2124@gmail.com">Say hello <span data-icon="arrow-up-right"></span></a><button id="copy-email" class="copy-email" hidden><span data-icon="copy"></span><span>Copy email</span></button></div><div class="contact-links" id="contact-links"></div><p class="contact-setup" id="contact-setup" hidden>Contact details are being added. Check back soon.</p></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a href="#home" class="wordmark"><span class="brand-icon" aria-hidden="true">&lt;·&gt;</span> portfolio<span class="brand-dot">.</span></a><p>© <span id="year"></span> <span id="footer-name">Anthony Cordial</span>. Built with intention.</p><a href="#home" class="back-to-top">Back to top <span data-icon="arrow-up"></span></a></div></footer>
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title"><button class="dialog-close icon-button" id="dialog-close" aria-label="Close project"><span data-icon="close"></span></button><div id="dialog-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
